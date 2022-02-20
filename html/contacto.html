@@ -58,13 +58,18 @@
     </header>
     <main class="main-contacto">
         <form class="form" action="" method="post">
-            
-            <input class="form__item form__item--Nombre" type="text"  placeholder="Nombre">
-            <input class="form__item form__item--Apellido" type="text" placeholder="Apellido">
-    
-            <input class="form__item form__item--email" type="email" name="email" placeholder="email">
-        
-            <textarea class="form__item form__item--textarea"  name="comentario" id="textarea" placeholder="Ingrese su comentario aqui...." maxlength="1000" ></textarea>
+            <label for="Nombre" class="form__item form__item--Nombre">
+                <input class="input" name="Nombre" type="text"  placeholder="Nombre">
+            </label>
+            <label for="Apellido" class="form__item form__item--Apellido">
+                <input class="input" name="Apellido" type="text" placeholder="Apellido">
+            </label>
+            <label for="email" class="form__item form__item--email">
+                <input class="input" name="email"  type="email" name="email" placeholder="email">
+            </label>
+            <label for="texto" class="form__item form__item--textarea">
+                <textarea class="input input--text" name="texto"  name="comentario" id="textarea" placeholder="Ingrese su comentario aqui...." maxlength="1000" ></textarea>
+            </label>
 
         </form>
     </main>
