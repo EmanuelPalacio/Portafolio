@@ -257,7 +257,7 @@
 }
 
 .galeria__box {
-    background-image: url("../images/imagen-fondo/fondo-probando.png");
+    background-image: url("../images/estudios/boostrap.png");
     background-size: contain;
     transition: all 1s;
 }
