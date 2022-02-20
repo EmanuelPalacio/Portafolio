@@ -17,10 +17,11 @@
 /* ---Fin Tipografias-------*/
 /* ------------variables-------------*/
 :root {
-    --color-principal: rgb(70, 173, 61);
+    --color-principal: rgb(15,26,69);
     --color-principal__transparencia: rgba(15,26,69,0.2);
     --color-secundario: rgb(243, 64, 130);
     --color-text: rgb(24, 24, 24) ;
+    --color-text-footer: rgb(158, 158, 158) ;
 }
 
 /* ----------Fin variables-----------*/
@@ -33,7 +34,7 @@
                             "footer";
     
     grid-template-rows: 50px auto 80px;
-    background: radial-gradient(circle, rgb(243, 64, 130) 0%, rgb(255, 255, 255) 100%);
+    background: radial-gradient(circle, rgb(243, 64, 130) 0%, rgb(15,26,69) 100%);
     /* animation: <name> <duration> <timing-function> <delay>
                 <iteration-count> <direction> <fill-mode> <play-state> */
     background-size: 3%;
@@ -82,7 +83,7 @@
     cursor: pointer;
 }
 .nav__item:hover {
-    text-shadow: 0px 5px 0.2rem var(--color-principal);
+    text-shadow: 0px 5px 0.5rem var(--color-principal);
     scale: 1.1;
     transition-property: all;
     transition-duration: 300ms ;
@@ -283,7 +284,7 @@
 /*------Footer----- */
 .footer {
     grid-area: footer;
-    color: var(--color-text);
+    color: var(--color-text-footer);
     background-color: none;
     display: flex;
     align-items: center;
