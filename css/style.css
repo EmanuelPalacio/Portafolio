@@ -298,6 +298,9 @@
 .footer__texto {
     width: 70%;
     text-align: center;
+    font-family: 'Downlink', sans-serif;
+    font-size: 14px;
+    
 }
 .fa-lg:hover {
     /*transition: <propiedad> <duracion> <funcion-tiempo> <retraso>;*/
