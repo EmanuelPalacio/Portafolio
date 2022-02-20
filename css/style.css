@@ -20,7 +20,7 @@
     --color-principal: rgb(15,26,69);
     --color-principal__transparencia: rgba(15,26,69,0.2);
     --color-secundario: rgb(243, 64, 130);
-    --color-text: rgb(243, 241, 241) ;
+    --color-text: rgb(24, 24, 24) ;
 }
 
 /* ----------Fin variables-----------*/
@@ -33,7 +33,7 @@
                             "footer";
     
     grid-template-rows: 50px auto 80px;
-    background: radial-gradient(circle, rgb(243, 64, 130) 0%, rgba(15,26,69,1) 90%);
+    background: radial-gradient(circle, rgb(243, 64, 130) 0%, rgb(255, 255, 255) 100%);
     /* animation: <name> <duration> <timing-function> <delay>
                 <iteration-count> <direction> <fill-mode> <play-state> */
     background-size: 3%;
@@ -299,7 +299,7 @@
     width: 70%;
     text-align: center;
     font-family: 'Downlink', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     
 }
 .fa-lg:hover {
