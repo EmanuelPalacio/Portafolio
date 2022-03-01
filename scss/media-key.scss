@@ -11,7 +11,7 @@
     
         .galeria {
             /*probando grid responsive para no utilizar media queri */
-            grid-template-row: repeat(3,1fr) ;
+            grid-template-rows: repeat(3,1fr) ;
             grid-template-columns: repeat(3,1fr);
             gap: 1px;
     
@@ -30,7 +30,7 @@
     
         .galeria {
             /*probando grid responsive para no utilizar media queri */
-            grid-template-row: repeat(2,1fr) ;
+            grid-template-rows: repeat(2,1fr) ;
             grid-template-columns: repeat(2,1fr);
             gap: 1px;
     
@@ -51,7 +51,7 @@
     
         .galeria {
             /*probando grid responsive para no utilizar media queri */
-            grid-template-row: 1fr ;
+            grid-template-rows: 1fr ;
             grid-template-columns: 1fr;
             gap: 1px;
     
