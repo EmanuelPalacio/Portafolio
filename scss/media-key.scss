@@ -7,6 +7,18 @@
 } 
 
 @media screen and (max-width: 992px)  {
+    .main-trabajos {
+    
+        .galeria {
+            /*probando grid responsive para no utilizar media queri */
+            grid-template-row: repeat(3,1fr) ;
+            grid-template-columns: repeat(3,1fr);
+            gap: 1px;
+    
+            }
+        }
+
+
     .nav .nav__menu .nav__links {
         margin-left: 180px;
         margin-right: 180px;    
@@ -14,6 +26,17 @@
 }
 
 @media screen and (max-width: 768px) {
+    .main-trabajos {
+    
+        .galeria {
+            /*probando grid responsive para no utilizar media queri */
+            grid-template-row: repeat(2,1fr) ;
+            grid-template-columns: repeat(2,1fr);
+            gap: 1px;
+    
+            }
+        }
+
     .nav .nav__menu .nav__links { 
         margin-left: 100px;
         margin-right: 100px;
@@ -24,6 +47,16 @@
     .Body {
         grid-template-rows: 200px auto 100px;
     }
+    .main-trabajos {
+    
+        .galeria {
+            /*probando grid responsive para no utilizar media queri */
+            grid-template-row: 1fr ;
+            grid-template-columns: 1fr;
+            gap: 1px;
+    
+            }
+        }
     .nav .nav__menu .nav__links {
         flex-direction: column;
         justify-content: space-around;
@@ -38,9 +71,10 @@
             grid-template-areas:                                            "nombre"
                                                                             "apellido"
                                                                             "email"
-                                                                            "comentarios";
+                                                                            "comentarios"
+                                                                            "btn";
             grid-template-columns: 300px ;
-            grid-template-rows: 50px 50px 50px 200px;
+            grid-template-rows: 50px 50px 50px 200px 50px;
             column-gap: 10px;
             margin: 50px 0 50px 0;
         }

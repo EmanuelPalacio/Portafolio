@@ -10,7 +10,8 @@
     top: 0;
     z-index: 2;
     background-color: $color-secundario;
-    font-weight: 600;
+    font-family: 'Courgette', cursive;
+    font-size: 1.1rem;
     .nav__menu {
         display: flex;
         flex-direction: row ;
@@ -95,11 +96,12 @@
 
     .form {
         display: grid;
-        grid-template-areas:    "nombre apellido"
-                                "email email"
-                                "comentarios comentarios";
+        grid-template-areas:                                    "nombre                     apellido"
+                                                                "email                      email"
+                                                                "comentarios            comentarios"
+                                                                "btn                         btn";
         grid-template-columns: 300px 300px;
-        grid-template-rows: 50px 50px 200px;
+        grid-template-rows: 50px 50px 200px 50px;
         column-gap: 10px;
         row-gap: 10px;
 
@@ -157,6 +159,18 @@
             resize: none;
             
         }
+        .btn {
+            grid-area: btn;
+            background-color: $color-secundario;
+            border: none;
+            border-radius: 10px;
+            transition: all;
+            transition-timing-function: 1s;
+
+            &:hover {
+                box-shadow: 0px 0px 0.9rem $color-text inset;
+            }
+        }
     }
 
 }
@@ -174,16 +188,13 @@
         .estudios__contenedor {
             width: 100%;
             text-align: center;
+            
 
             .estudios__img {
                 width: 250px;
                 height: 250px;
             }
-            .estudios__img--html {
-                width: 250px;
-                height: 250px;
-                padding: 10px;
-            }
+            
         }
      }
 }
@@ -191,23 +202,19 @@
 /*------ Main Trabajos----- */
 .main-trabajos {
     grid-area: main;
-    align-self: center;
-    padding: 0 20px 0 20px;
 
     .galeria {
         display: grid;
+        height: 100%;
         /*probando grid responsive para no utilizar media queri */
-        grid-auto-rows: 185px;
-        grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
-        gap: 3px;
+        grid-template-row: repeat(4,1fr) ;
+        grid-template-columns: repeat(4,1fr);
+        gap: 1px;
 
         .galeria__box {
-            background-image: url("../images/estudios/boostrap.png");
-            background-size: contain;
-            transition: all 1s;
-
-            &:hover {
-                scale: 1.3;
+            .image-size {
+            width: 100%;
+            height: 100%;
             }
         }
     }
@@ -256,6 +263,7 @@
             }
         }
     }
+    
 }
 /*------Fin Footer----- */
 /*------responsive design----- */
