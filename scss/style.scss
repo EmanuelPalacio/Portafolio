@@ -202,19 +202,17 @@
 /*------ Main Trabajos----- */
 .main-trabajos {
     grid-area: main;
-
+    
     .galeria {
         display: grid;
         height: 100%;
-        /*probando grid responsive para no utilizar media queri */
-        grid-template-rows: repeat(4,1fr) ;
         grid-template-columns: repeat(4,1fr);
-        gap: 1px;
+        grid-template-rows: repeat(2,1fr) ;
 
         .galeria__box {
             .image-size {
-            width: 100%;
-            height: 100%;
+                width: 100%;
+                height: 100%;
             }
         }
     }

@@ -8,17 +8,10 @@
 
 @media screen and (max-width: 992px)  {
     .main-trabajos {
-    
         .galeria {
-            /*probando grid responsive para no utilizar media queri */
-            grid-template-rows: repeat(3,1fr) ;
             grid-template-columns: repeat(3,1fr);
-            gap: 1px;
-    
             }
-        }
-
-
+    }
     .nav .nav__menu .nav__links {
         margin-left: 180px;
         margin-right: 180px;    
@@ -27,13 +20,8 @@
 
 @media screen and (max-width: 768px) {
     .main-trabajos {
-    
         .galeria {
-            /*probando grid responsive para no utilizar media queri */
-            grid-template-rows: repeat(2,1fr) ;
             grid-template-columns: repeat(2,1fr);
-            gap: 1px;
-    
             }
         }
 
@@ -48,13 +36,8 @@
         grid-template-rows: 200px auto 100px;
     }
     .main-trabajos {
-    
         .galeria {
-            /*probando grid responsive para no utilizar media queri */
-            grid-template-rows: 1fr ;
-            grid-template-columns: 1fr;
-            gap: 1px;
-    
+            grid-template-columns:1fr;
             }
         }
     .nav .nav__menu .nav__links {
