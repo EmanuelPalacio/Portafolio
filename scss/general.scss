@@ -1,0 +1,27 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+    box-sizing: border-box;
+}
+.Body {
+    display: grid;
+    min-height: 100vh;
+    grid-template-areas:    "menu"
+                            "main"
+                            "footer";
+    
+    grid-template-rows: 50px auto 80px;
+    background: radial-gradient(circle, $color-secundario 0%, $color-principal 100%);
+    /* animation: <name> <duration> <timing-function> <delay>
+                <iteration-count> <direction> <fill-mode> <play-state> */
+    background-size: 3%;
+    background-position: center;
+    animation-name: CambioDeIntensidad ;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+
+}

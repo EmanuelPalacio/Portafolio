@@ -175,7 +175,7 @@
     background-color: var(--color-text);
     transition: all 1s;
 }
-.form__item:hover:before {
+.form__item:hover::before {
     width: 100%;
     left: 0;
 }
