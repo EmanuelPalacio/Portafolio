@@ -1,0 +1,29 @@
+.footer {
+    grid-area: footer;
+    color: $color-text-footer;
+    background-color: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .icons {
+        display: flex;
+        justify-content: space-evenly;
+        width: 200px;
+        margin-bottom: 15px;
+        .fa-lg {
+            &:hover {
+            /*transition: <propiedad> <duracion> <funcion-tiempo> <retraso>;*/
+            
+                color: $color-secundario;
+                scale: 1.5;
+                transition-property: all;
+                transition-duration: 300ms ;
+                transition-timing-function: linear;
+            }
+        }
+    }
+    
+}

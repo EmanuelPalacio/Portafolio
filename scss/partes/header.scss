@@ -1,0 +1,56 @@
+.nav {
+    grid-area: menu;  
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: $color-secundario;
+    font-family: 'Courgette', cursive;
+    font-size: 1.1rem;
+    .nav__menu {
+        display: flex;
+        flex-direction: row ;
+        flex-wrap: nowrap;
+        justify-content: center;
+        height: 100%;
+
+        .nav__links { 
+            display: inherit;
+            align-items: center;
+            justify-content: space-between;
+            margin-left:  300px;
+            margin-right: 300px;
+            height: 100%;
+            width: 100%;
+
+            .nav__item {
+                color: $color-text;
+
+                &:hover {
+                    text-shadow: 0px 5px 0.5rem $color-text;
+                    scale: 1.1;
+                    transition-property: all;
+                    transition-duration: 300ms ;
+                    transition-timing-function: linear;
+                }
+                .logo {
+                    width: 30px;
+                    height: 35px;
+                    
+                }
+            }
+            .nav__item a:link {
+                color: $color-text;
+            }
+            .nav__item a:visited {
+                color: $color-text;
+            }
+            .nav__item--logo {
+                font-size: 0px;
+
+                &:hover {
+                    background-color:$color-principal__transparencia;
+                }
+            }
+        }
+    }
+}

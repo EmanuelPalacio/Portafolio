@@ -1,0 +1,163 @@
+.main-index {
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .main-index__presentacion {
+        text-align: center;
+        color: var(--color-text);
+        padding-bottom: 5vh;
+        
+    }
+    .main-index__texto {
+        color: var(--color-text);
+        text-align: center;
+        height: auto;
+        margin-left: 20vh;
+        margin-right: 20vh;
+        
+    }
+    
+}
+
+.main-contacto {
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .form {
+        display: grid;
+        grid-template-areas:                                    "nombre                     apellido"
+                                                                "email                      email"
+                                                                "comentarios            comentarios"
+                                                                "btn                         btn";
+        grid-template-columns: 300px 300px;
+        grid-template-rows: 50px 50px 200px 50px;
+        column-gap: 10px;
+        row-gap: 10px;
+
+        .form__item {
+            position: relative;;
+            font-size: 16px;
+            color: $color-text;
+            border: none ;
+            outline: none;
+
+            &::before {
+                content: "";
+                display: block;
+                width: 0%;
+                left: 50%;
+                height: 2px;
+                position:absolute;
+                bottom: 0;
+                
+                background-color: $color-text;
+                transition: all 1s;
+            }
+            &:hover::before {
+                width: 100%;
+                left: 0;
+            }
+            
+            .input {
+                color: $color-text;
+                background-color: $color-principal__transparencia;
+                font-size: 16px;
+                width: 100%;
+                height: 100%;
+                border: none;
+                padding: 0 15px;
+                outline: none;
+            }
+            .input--text {
+                padding: 15px 15px;
+                resize: none;
+            }
+        }
+        .form__item--Nombre {
+            grid-area: nombre;
+        }
+        .form__item--Apellido {
+            grid-area: apellido;
+        }
+        .form__item--email {
+            grid-area: email;
+        }
+        .form__item--textarea {
+            grid-area: comentarios;
+            overflow: auto;
+            resize: none;
+            
+        }
+        .btn {
+            grid-area: btn;
+            background-color: $color-secundario;
+            border: none;
+            border-radius: 10px;
+            transition: all;
+            transition-timing-function: 1s;
+
+            &:hover {
+                box-shadow: 0px 0px 0.9rem $color-text inset;
+            }
+        }
+    }
+
+}
+
+.main-estudios {
+    grid-area: main;
+    align-self: center;
+
+    .estudios {
+        display: grid;
+        grid-auto-rows: 250px;
+        grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+        
+        .estudios__contenedor {
+            width: 100%;
+            text-align: center;
+            
+
+            .estudios__img {
+                width: 250px;
+                height: 250px;
+            }
+            
+        }
+     }
+}
+
+.main-trabajos {
+    grid-area: main;
+    
+    .galeria {
+        display: grid;
+        height: 100%;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(2,1fr) ;
+
+        .galeria__box {
+            .image-size {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+.main-sobre-mi {
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .main-sobre-mi__texto {
+        margin: 20px 10%;
+    }
+}
