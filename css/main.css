@@ -35,7 +35,6 @@
   .nav .nav__menu {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
     justify-content: center;
     height: 100%; }
     .nav .nav__menu .nav__links {
@@ -207,3 +206,58 @@
 /*------responsive design----- */
 /*-----------------variables---------------*/
 /*-----------------Fin variables---------------*/
+/*------responsive design----- */
+@media screen and (max-width: 1200px) {
+  .nav .nav__menu .nav__links {
+    margin-left: 250px;
+    margin-right: 250px; } }
+
+@media screen and (max-width: 992px) {
+  .nav .nav__menu .nav__links {
+    margin-left: 180px;
+    margin-right: 180px; }
+  .main-trabajos .galeria {
+    grid-template-columns: repeat(3, 1fr); }
+    .main-trabajos .galeria .lg-hidden {
+      display: none; } }
+
+@media screen and (max-width: 768px) {
+  .nav .nav__menu .nav__links {
+    margin-left: 100px;
+    margin-right: 100px; }
+  .main-trabajos .galeria {
+    grid-template-columns: repeat(2, 1fr); } }
+
+@media screen and (max-width: 576px) {
+  .Body {
+    grid-template-rows: 200px auto 100px; }
+  .nav .nav__menu .nav__links {
+    flex-direction: column;
+    justify-content: space-around; }
+  .nav .nav__menu .nav__item--logo {
+    order: -1; }
+  .main-trabajos .galeria {
+    grid-template-columns: 1fr; }
+  .main-contacto .form {
+    display: grid;
+    grid-template-areas: "nombre" "apellido" "email" "comentarios" "btn";
+    grid-template-columns: 300px;
+    grid-template-rows: 50px 50px 50px 200px 50px;
+    column-gap: 10px;
+    margin: 50px 0 50px 0; }
+  .main-index__texto {
+    height: auto;
+    margin-left: 5vh;
+    margin-right: 5vh; } }
+
+/*------Fin responsive design----- */
+/*------Animaciones----- */
+@keyframes CambioDeIntensidad {
+  0% {
+    background-size: 3%; }
+  50% {
+    background-size: 8%; }
+  100% {
+    background-size: 3%; } }
+
+/*------ Fin Animaciones----- */

@@ -1,52 +1,90 @@
 /*------responsive design----- */
-@media screen and (max-width: 1200px) {
-    .nav .nav__menu .nav__links {
-        margin-left: 250px;
-        margin-right: 250px;    
-}
-} 
+// Mapa
+$breackpoints: (
+    sm: 576px ,
+    md: 768px ,
+    lg: 992px ,
+    xl: 1200px 
+);
 
-@media screen and (max-width: 992px)  {
+@mixin desktop-first ($breackpoint) {
+    @if map-has-key($breackpoints, $breackpoint) {
+        @media screen and (max-width: map-get($breackpoints , $breackpoint)) {
+            @content;
+        }
+        
+    } @else {
+        @error "el valor #{ $breackpoint } no ah sido declarado como breackpoints";
+    }
+}
+
+@include desktop-first(xl){
+    .nav {
+        .nav__menu {
+            .nav__links {
+                margin-left: 250px;
+                margin-right: 250px;  
+            }
+        }
+    }
+}
+@include desktop-first(lg) {
+    .nav {
+        .nav__menu {
+            .nav__links {
+                margin-left: 180px;
+                margin-right: 180px;   
+            }
+        }
+    }
+
     .main-trabajos {
         .galeria {
             grid-template-columns: repeat(3,1fr);
-            }
-    }
-    .nav .nav__menu .nav__links {
-        margin-left: 180px;
-        margin-right: 180px;    
-}
-}
 
-@media screen and (max-width: 768px) {
+            .lg-hidden {
+                display: none;
+            }
+            }
+    } 
+}
+@include desktop-first(md) {
+    .nav {
+        .nav__menu {
+            .nav__links {
+                margin-left: 100px;
+                margin-right: 100px;   
+            }
+        }
+    }
+
     .main-trabajos {
         .galeria {
             grid-template-columns: repeat(2,1fr);
             }
-        }
-
-    .nav .nav__menu .nav__links { 
-        margin-left: 100px;
-        margin-right: 100px;
-    }
+    } 
 }
-
-@media screen and (max-width: 576px) {
+@include desktop-first(sm) {
     .Body {
         grid-template-rows: 200px auto 100px;
     }
+    .nav {
+        .nav__menu {
+            .nav__links {
+                flex-direction: column;
+                justify-content: space-around;   
+            }
+            .nav__item--logo {
+                order: -1;
+            }
+        }
+    }
+
     .main-trabajos {
         .galeria {
             grid-template-columns:1fr;
             }
-        }
-    .nav .nav__menu .nav__links {
-        flex-direction: column;
-        justify-content: space-around;
-    }
-    .nav__item--logo {
-        order: -1;
-    }
+    } 
     .main-contacto {
 
         .form {
@@ -70,6 +108,7 @@
         margin-right: 5vh;
         
     }
+    
 }
 
 /*------Fin responsive design----- */
