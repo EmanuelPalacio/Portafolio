@@ -22,8 +22,8 @@ $breackpoints: (
     .nav {
         .nav__menu {
             .nav__links {
-                margin-left: 250px;
-                margin-right: 250px;  
+                margin-left: $margin-nav - 50px;
+                margin-right: $margin-nav - 50px;  
             }
         }
     }
@@ -32,8 +32,8 @@ $breackpoints: (
     .nav {
         .nav__menu {
             .nav__links {
-                margin-left: 180px;
-                margin-right: 180px;   
+                margin-left: $margin-nav/2;
+                margin-right: $margin-nav/2;   
             }
         }
     }
@@ -52,8 +52,8 @@ $breackpoints: (
     .nav {
         .nav__menu {
             .nav__links {
-                margin-left: 100px;
-                margin-right: 100px;   
+                margin-left: $margin-nav/3;
+                margin-right: $margin-nav/3;   
             }
         }
     }
@@ -61,8 +61,12 @@ $breackpoints: (
     .main-trabajos {
         .galeria {
             grid-template-columns: repeat(2,1fr);
+
+            .lg-hidden {
+                display: block;
             }
-    } 
+            }
+    }  
 }
 @include desktop-first(sm) {
     .Body {

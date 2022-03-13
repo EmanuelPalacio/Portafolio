@@ -2,7 +2,7 @@
     grid-area: menu;  
     position: sticky;
     top: 0;
-    z-index: 2;
+    z-index: 3;
     background-color: $color-secundario;
     font-family: 'Courgette', cursive;
     font-size: 1.1rem;
@@ -16,8 +16,8 @@
             display: inherit;
             align-items: center;
             justify-content: space-between;
-            margin-left:  300px;
-            margin-right: 300px;
+            margin-left:  $margin-nav;
+            margin-right: $margin-nav;
             height: 100%;
             width: 100%;
 

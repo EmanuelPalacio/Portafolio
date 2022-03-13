@@ -141,14 +141,42 @@
         grid-template-columns: repeat(4,1fr);
         grid-template-rows: repeat(2,1fr) ;
 
-        .galeria__box {
-            .image-size {
-                width: 100%;
-                height: 100%;
-            }
+        .galeria__contenedor {
+            position: relative;
+            overflow: hidden;
+                
+                .galeria__hover {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    width: 100%;
+                    height: 0%;
+                    background-color: $color-principal__transparencia;
+                    visibility: hidden;
+                    transition: all;
+                    transition-duration: 1000ms;
+                    transition-timing-function: ease;
+
+                    .hover-icon {
+                        height: 50px;
+                        width: 50px;
+                    }
+                }
+                .image-size {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                &:hover .galeria__hover {
+                    visibility: visible;
+                    height: 100%;
+                }
+
         }
     }
 }
+
 
 .main-sobre-mi {
     grid-area: main;
