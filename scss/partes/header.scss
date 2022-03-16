@@ -37,11 +37,9 @@
                     
                 }
             }
-            .nav__item a:link {
-                color: $color-text;
-            }
-            .nav__item a:visited {
-                color: $color-text;
+            .nav__item  {
+                a:link, a:visited {color: $color-text;
+                }
             }
             .nav__item--logo {
                 font-size: 0px;

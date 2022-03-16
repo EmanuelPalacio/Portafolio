@@ -13,6 +13,11 @@
         justify-content: space-evenly;
         width: 200px;
         margin-bottom: 15px;
+        
+        a:link, a:visited {
+            color: $color-text;
+        }
+
         .fa-lg {
             &:hover {
             /*transition: <propiedad> <duracion> <funcion-tiempo> <retraso>;*/

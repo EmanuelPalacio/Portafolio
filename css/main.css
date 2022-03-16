@@ -62,9 +62,7 @@
         .nav .nav__menu .nav__links .nav__item .logo {
           width: 30px;
           height: 35px; }
-      .nav .nav__menu .nav__links .nav__item a:link {
-        color: #dcdcdc; }
-      .nav .nav__menu .nav__links .nav__item a:visited {
+      .nav .nav__menu .nav__links .nav__item a:link, .nav .nav__menu .nav__links .nav__item a:visited {
         color: #dcdcdc; }
       .nav .nav__menu .nav__links .nav__item--logo {
         font-size: 0px; }
@@ -240,6 +238,8 @@
     justify-content: space-evenly;
     width: 200px;
     margin-bottom: 15px; }
+    .footer .icons a:link, .footer .icons a:visited {
+      color: #dcdcdc; }
     .footer .icons .fa-lg:hover {
       /*transition: <propiedad> <duracion> <funcion-tiempo> <retraso>;*/
       color: #ff0534;
