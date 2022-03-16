@@ -3,9 +3,9 @@
     position: sticky;
     top: 0;
     z-index: 3;
-    background-color: $color-secundario;
-    font-family: 'Courgette', cursive;
-    font-size: 1.1rem;
+    background-color: $color-principal;
+    font-size: 1rem;
+    border-bottom: 2px solid $color-secundario;
     .nav__menu {
         display: flex;
         flex-direction: row ;
@@ -22,10 +22,10 @@
             width: 100%;
 
             .nav__item {
-                color: $color-text;
+                color: $color-text ;
 
                 &:hover {
-                    text-shadow: 0px 5px 0.5rem $color-text;
+                    text-shadow: 0px 10px 0.4rem $color-secundario;
                     scale: 1.1;
                     transition-property: all;
                     transition-duration: 300ms ;

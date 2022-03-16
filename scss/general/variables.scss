@@ -1,10 +1,15 @@
+/*-----------------variables fuentes---------------*/
+@import url('http://fonts.cdnfonts.com/css/meticula');
+
+$font-general: 'Meticula', sans-serif;
+/*-----------------variables fin fuentes---------------*/
 /*-----------------variables color---------------*/
-$color-principal:rgb(15,26,69);
-$color-principal__transparencia: rgba(15,26,69,0.4);
-$color-secundario: rgb(243, 64, 130);
-$color-text: rgb(24, 24, 24) ;
-$color-text-footer: rgb(158, 158, 158) ;
+$color-principal:#331a38;
+$color-principal__transparencia: rgba(51, 26, 56,0.4);
+$color-secundario: #ff0534;
+$color-text: #dcdcdc ;
 /*-----------------Fin variables color---------------*/
+
 
 /*-----------------margin barra de nevagación---------------*/
 $margin-nav: 300px;
