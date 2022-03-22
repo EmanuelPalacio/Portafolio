@@ -130,4 +130,20 @@ $breackpoints: (
         background-size: 3%;
     } 
 }
+@keyframes loader {
+    0% {
+        top: 95.88px;
+        left: 95.88px;
+        width: 0;
+        height: 0;
+        opacity: 1;
+    }
+    100% {
+        top: -11.22px;
+        left: -11.22px;
+        width: 214.20000000000002px;
+        height: 214.20000000000002px;
+        opacity: 0;
+    }
+}
 /*------ Fin Animaciones----- */

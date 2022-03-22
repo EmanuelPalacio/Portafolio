@@ -25,3 +25,55 @@
     animation-timing-function: linear;
 }
 
+.PantallaDeCarga {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    overflow: hidden;
+    background: $color-text;
+    position: absolute;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: clip-path 3s ease;
+    transition-delay: 2s;
+    clip-path: circle(111.4% at 49% 0);
+
+    .PantallaDeCarga__contenedor {
+        width: 206px;
+        height: 206px;
+        position: relative;
+        transform: translateZ(0) scale(1);
+        backface-visibility: hidden;
+        transform-origin: 0 0; /* see note above */
+
+        div {
+            width: 100vh;
+            height: 100vh;
+            position: absolute;
+            border-width: 6.12px;
+            border-style: solid;
+            opacity: 1;
+            border-radius: 50%;
+            animation: loader 3s cubic-bezier(0,0.2,0.8,1) infinite;
+
+            
+        }
+        .contenedor-1 {
+            border-color: $color-secundario;
+            animation-delay: 0s;
+        
+        }
+        .contenedor-2 {
+            border-color: $color-principal;
+            animation-delay: -1.2s;
+        }
+}
+}
+.pantalla {
+    clip-path: circle(0.0% at 50% 0);
+}
+
+
+

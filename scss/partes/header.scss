@@ -20,16 +20,16 @@
             margin-right: $margin-nav;
             height: 100%;
             width: 100%;
+            transition-property: all;
+            transition-duration: 300ms ;
+            transition-timing-function: linear;
 
             .nav__item {
                 color: $color-text ;
 
                 &:hover {
-                    text-shadow: 0px 10px 0.4rem $color-secundario;
                     scale: 1.1;
-                    transition-property: all;
-                    transition-duration: 300ms ;
-                    transition-timing-function: linear;
+                    filter: drop-shadow(0px 5px 0.3rem $color-secundario);
                 }
                 .logo {
                     width: 30px;
@@ -43,10 +43,8 @@
             }
             .nav__item--logo {
                 font-size: 0px;
-
-                &:hover {
-                    background-color:$color-principal__transparencia;
-                }
+    /*font-size en este caso esta utilizado para eliminar un espacio fantasma que se genera al colocar la imagen */
+                
             }
         }
     }
