@@ -256,13 +256,14 @@
         height: 100%; }
 
 .main-sobre-mi {
-  grid-area: main;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center; }
-  .main-sobre-mi .main-sobre-mi__texto {
-    margin: 20px 10%; }
+  grid-area: main; }
+  .main-sobre-mi .main-sobre-mi__contenedor {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%; }
+    .main-sobre-mi .main-sobre-mi__contenedor .main-sobre-mi__texto, .main-sobre-mi .main-sobre-mi__contenedor .main-sobre-mi__cv {
+      width: 50%; }
 
 /*------Footer----- */
 .footer {
