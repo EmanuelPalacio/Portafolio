@@ -58,6 +58,13 @@ $breackpoints: (
         }
     }
 
+    .main-index {
+        .main-index__texto {
+            width: 80%;
+        }
+        
+    }
+
     .main-trabajos {
         .galeria {
             grid-template-columns: repeat(2,1fr);
@@ -66,13 +73,22 @@ $breackpoints: (
                 display: block;
             }
             }
-    }  
+    }
+
+    .main-sobre-mi {
+        .main-sobre-mi__contenedor {
+            .main-sobre-mi__texto, .main-sobre-mi__cv {
+                width: 80%;
+            }    
+        }
+    }
 }
 @include desktop-first(sm) {
     .Body {
         grid-template-rows: 200px auto 100px;
     }
     .nav {
+        position: static;
         .nav__menu {
             .nav__links {
                 flex-direction: column;
