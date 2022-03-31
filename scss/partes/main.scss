@@ -13,14 +13,22 @@
     }
     h1 {
         text-align: center;
-        width: 50%;
         font-size: $Titulo;
-        margin: 30px 0;   
+        margin: 30px 0; 
+
+        span {
+            display: block;
+        }
     }
     p {
         text-align: center;
         width: 80%;
-        font-size: $text; 
+        font-size: $text;
+
+        span {
+            display: block;
+            padding-top: 20px;
+        }
     }
     
 }

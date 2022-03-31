@@ -30,14 +30,14 @@
     height: 100%;
     display: inline-block;
     overflow: hidden;
-    background: $color-text;
+    background: $color-principal;
     position: absolute;
     z-index: 5;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: clip-path 1.2s ease-in-out;
-    transition-delay: 1s;
+    transition-delay: 2.5s;
     clip-path: circle(141.2% at 100% 0);
 
     .PantallaDeCarga__contenedor {
@@ -61,12 +61,12 @@
             
         }
         .contenedor-1 {
-            border-color: $color-secundario;
+            border-color: $color-text;
             animation-delay: 0s;
         
         }
         .contenedor-2 {
-            border-color: $color-principal;
+            border-color: $color-secundario;
             animation-delay: -1.2s;
         }
 }

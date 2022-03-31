@@ -36,14 +36,14 @@
   height: 100%;
   display: inline-block;
   overflow: hidden;
-  background: #dcdcdc;
+  background: #331a38;
   position: absolute;
   z-index: 5;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: clip-path 1.2s ease-in-out;
-  transition-delay: 1s;
+  transition-delay: 2.5s;
   clip-path: circle(141.2% at 100% 0); }
   .PantallaDeCarga .PantallaDeCarga__contenedor {
     width: 206px;
@@ -63,10 +63,10 @@
       border-radius: 50%;
       animation: loader 3s cubic-bezier(0, 0.2, 0.8, 1) infinite; }
     .PantallaDeCarga .PantallaDeCarga__contenedor .contenedor-1 {
-      border-color: #ff0534;
+      border-color: #dcdcdc;
       animation-delay: 0s; }
     .PantallaDeCarga .PantallaDeCarga__contenedor .contenedor-2 {
-      border-color: #331a38;
+      border-color: #ff0534;
       animation-delay: -1.2s; }
 
 .pantalla {
@@ -124,13 +124,17 @@
     padding-bottom: 5vh; }
   .main-index h1 {
     text-align: center;
-    width: 50%;
     font-size: 2rem;
     margin: 30px 0; }
+    .main-index h1 span {
+      display: block; }
   .main-index p {
     text-align: center;
     width: 80%;
     font-size: 1.2rem; }
+    .main-index p span {
+      display: block;
+      padding-top: 20px; }
 
 .main-contacto {
   grid-area: main;
