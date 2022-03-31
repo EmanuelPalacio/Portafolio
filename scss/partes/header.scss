@@ -4,7 +4,7 @@
     top: 0;
     z-index: 3;
     background-color: $color-principal;
-    font-size: 1rem;
+    font-size: $text-nav;
     border-bottom: 2px solid $color-secundario;
     .nav__menu {
         display: flex;

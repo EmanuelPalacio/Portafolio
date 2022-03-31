@@ -27,6 +27,21 @@ $breackpoints: (
             }
         }
     }
+    .main-estudios {
+        .estudios-text {
+            width: 50%;
+        }
+        .estudios {
+            width: 50%;
+            
+            .estudios__contenedor {
+                .estudios__img {
+                    width: 200px;
+                    height: 200px;
+                } 
+            }
+        }
+    }
 }
 @include desktop-first(lg) {
     .nav {
@@ -34,6 +49,24 @@ $breackpoints: (
             .nav__links {
                 margin-left: $margin-nav/2;
                 margin-right: $margin-nav/2;   
+            }
+        }
+    }
+    .main-estudios {
+        .estudios-text {
+            width: 60%;
+        }
+        .estudios {
+            grid-template-rows: repeat(4,1fr);
+            grid-template-columns: 1fr;
+            gap: 0;
+            width: 40%;
+            
+            .estudios__contenedor {
+                .estudios__img {
+                    width: 100px;
+                    height: 100px;
+                } 
             }
         }
     }
@@ -57,22 +90,13 @@ $breackpoints: (
             }
         }
     }
-
-    .main-index {
-        .main-index__texto {
-            width: 80%;
-        }
-        
-    }
-
     .main-trabajos {
         .galeria {
             grid-template-columns: repeat(2,1fr);
-
             .lg-hidden {
                 display: block;
             }
-            }
+        }
     }
 
     .main-sobre-mi {
@@ -99,6 +123,25 @@ $breackpoints: (
             }
         }
     }
+    .main-estudios {
+        flex-direction: column;
+        .estudios-text {
+            width: 70%;
+        }
+        .estudios {
+            grid-template-rows: 1fr;
+            grid-template-columns: repeat(4,1fr);
+            width: 80%;
+            margin: 20px 0;
+            
+            .estudios__contenedor {
+                .estudios__img {
+                    width: 100px;
+                    height: 100px;
+                } 
+            }
+        }
+    }
 
     .main-trabajos {
         .galeria {
@@ -120,14 +163,6 @@ $breackpoints: (
             margin: 50px 0 50px 0;
         }
 }
-
-
-    .main-index__texto {
-        height: auto;
-        margin-left: 5vh;
-        margin-right: 5vh;
-        
-    }
     
 }
 

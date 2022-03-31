@@ -4,6 +4,8 @@
 /*-----------------variables fin fuentes---------------*/
 /*-----------------variables color---------------*/
 /*-----------------Fin variables color---------------*/
+/*-----------------variables Texto---------------*/
+/*-----------------Fin variables Texto---------------*/
 /*-----------------margin barra de nevagación---------------*/
 @import url("http://fonts.cdnfonts.com/css/meticula");
 * {
@@ -40,9 +42,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: clip-path 3s ease;
+  transition: clip-path 2s linear;
   transition-delay: 2s;
-  clip-path: circle(111.4% at 49% 0); }
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
   .PantallaDeCarga .PantallaDeCarga__contenedor {
     width: 206px;
     height: 206px;
@@ -68,7 +70,7 @@
       animation-delay: -1.2s; }
 
 .pantalla {
-  clip-path: circle(0% at 50% 0); }
+  clip-path: polygon(100% 50%, 100% 50%, 0 50%, 0 50%); }
 
 /*------Header-----*/
 .nav {
@@ -118,14 +120,17 @@
   flex-direction: column;
   color: #dcdcdc; }
   .main-index .main-index__presentacion {
-    text-align: center;
     color: var(--color-text);
     padding-bottom: 5vh; }
-  .main-index .main-index__texto {
-    color: var(--color-text);
+  .main-index h1 {
     text-align: center;
-    height: auto;
-    width: 50%; }
+    width: 50%;
+    font-size: 2rem;
+    margin: 30px 0; }
+  .main-index p {
+    text-align: center;
+    width: 80%;
+    font-size: 1.2rem; }
 
 .main-contacto {
   grid-area: main;
@@ -210,11 +215,25 @@
 
 .main-estudios {
   grid-area: main;
-  align-self: center; }
+  display: flex;
+  align-items: center; }
+  .main-estudios .estudios-text {
+    width: 40%;
+    text-align: center;
+    color: #dcdcdc;
+    margin: 20px 10px; }
+    .main-estudios .estudios-text h1 {
+      font-size: 2rem;
+      margin: 50px 0; }
+    .main-estudios .estudios-text p {
+      font-size: 1.2rem; }
   .main-estudios .estudios {
     display: grid;
-    grid-auto-rows: 250px;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+    grid-template-rows: repeat(2, 250px);
+    grid-template-columns: repeat(2, 250px);
+    column-gap: 50px;
+    width: 60%;
+    justify-content: center; }
     .main-estudios .estudios .estudios__contenedor {
       width: 100%;
       text-align: center; }
@@ -266,9 +285,12 @@
     .main-sobre-mi .main-sobre-mi__contenedor .main-sobre-mi__texto, .main-sobre-mi .main-sobre-mi__contenedor .main-sobre-mi__cv {
       color: #dcdcdc;
       text-align: center;
-      width: 50%; }
+      width: 80%; }
       .main-sobre-mi .main-sobre-mi__contenedor .main-sobre-mi__texto h1, .main-sobre-mi .main-sobre-mi__contenedor .main-sobre-mi__cv h1 {
+        font-size: 2rem;
         margin: 30px 0px; }
+      .main-sobre-mi .main-sobre-mi__contenedor .main-sobre-mi__texto p, .main-sobre-mi .main-sobre-mi__contenedor .main-sobre-mi__cv p {
+        font-size: 1.2rem; }
     .main-sobre-mi .main-sobre-mi__contenedor .main-sobre-mi__cv {
       display: flex;
       justify-content: center;
@@ -319,17 +341,36 @@
 /*-----------------variables fin fuentes---------------*/
 /*-----------------variables color---------------*/
 /*-----------------Fin variables color---------------*/
+/*-----------------variables Texto---------------*/
+/*-----------------Fin variables Texto---------------*/
 /*-----------------margin barra de nevagación---------------*/
 /*------responsive design----- */
 @media screen and (max-width: 1200px) {
   .nav .nav__menu .nav__links {
     margin-left: 250px;
-    margin-right: 250px; } }
+    margin-right: 250px; }
+  .main-estudios .estudios-text {
+    width: 50%; }
+  .main-estudios .estudios {
+    width: 50%; }
+    .main-estudios .estudios .estudios__contenedor .estudios__img {
+      width: 200px;
+      height: 200px; } }
 
 @media screen and (max-width: 992px) {
   .nav .nav__menu .nav__links {
     margin-left: 150px;
     margin-right: 150px; }
+  .main-estudios .estudios-text {
+    width: 60%; }
+  .main-estudios .estudios {
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr;
+    gap: 0;
+    width: 40%; }
+    .main-estudios .estudios .estudios__contenedor .estudios__img {
+      width: 100px;
+      height: 100px; }
   .main-trabajos .galeria {
     grid-template-columns: repeat(3, 1fr); }
     .main-trabajos .galeria .lg-hidden {
@@ -339,8 +380,6 @@
   .nav .nav__menu .nav__links {
     margin-left: 100px;
     margin-right: 100px; }
-  .main-index .main-index__texto {
-    width: 80%; }
   .main-trabajos .galeria {
     grid-template-columns: repeat(2, 1fr); }
     .main-trabajos .galeria .lg-hidden {
@@ -358,6 +397,18 @@
       justify-content: space-around; }
     .nav .nav__menu .nav__item--logo {
       order: -1; }
+  .main-estudios {
+    flex-direction: column; }
+    .main-estudios .estudios-text {
+      width: 70%; }
+    .main-estudios .estudios {
+      grid-template-rows: 1fr;
+      grid-template-columns: repeat(4, 1fr);
+      width: 80%;
+      margin: 20px 0; }
+      .main-estudios .estudios .estudios__contenedor .estudios__img {
+        width: 100px;
+        height: 100px; }
   .main-trabajos .galeria {
     grid-template-columns: 1fr; }
   .main-contacto .form {
@@ -366,11 +417,7 @@
     grid-template-columns: 300px;
     grid-template-rows: 50px 50px 50px 200px 50px;
     column-gap: 10px;
-    margin: 50px 0 50px 0; }
-  .main-index__texto {
-    height: auto;
-    margin-left: 5vh;
-    margin-right: 5vh; } }
+    margin: 50px 0 50px 0; } }
 
 /*------Fin responsive design----- */
 /*------Animaciones----- */
