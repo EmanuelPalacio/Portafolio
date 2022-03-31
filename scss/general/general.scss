@@ -36,9 +36,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: clip-path 2s linear;
-    transition-delay: 2s;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    transition: clip-path 1.2s ease-in-out;
+    transition-delay: 1s;
+    clip-path: circle(141.2% at 100% 0);
 
     .PantallaDeCarga__contenedor {
         width: 206px;
@@ -72,7 +72,7 @@
 }
 }
 .pantalla {
-    clip-path: polygon(100% 50%, 100% 50%, 0 50%, 0 50%);
+    clip-path: circle(0% at 100% 0);
 }
 
 

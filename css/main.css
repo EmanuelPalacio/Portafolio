@@ -42,9 +42,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: clip-path 2s linear;
-  transition-delay: 2s;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
+  transition: clip-path 1.2s ease-in-out;
+  transition-delay: 1s;
+  clip-path: circle(141.2% at 100% 0); }
   .PantallaDeCarga .PantallaDeCarga__contenedor {
     width: 206px;
     height: 206px;
@@ -70,7 +70,7 @@
       animation-delay: -1.2s; }
 
 .pantalla {
-  clip-path: polygon(100% 50%, 100% 50%, 0 50%, 0 50%); }
+  clip-path: circle(0% at 100% 0); }
 
 /*------Header-----*/
 .nav {
@@ -395,8 +395,8 @@
     .nav .nav__menu .nav__links {
       flex-direction: column;
       justify-content: space-around; }
-    .nav .nav__menu .nav__item--logo {
-      order: -1; }
+      .nav .nav__menu .nav__links .nav__item--logo {
+        order: -1; }
   .main-estudios {
     flex-direction: column; }
     .main-estudios .estudios-text {
@@ -404,11 +404,11 @@
     .main-estudios .estudios {
       grid-template-rows: 1fr;
       grid-template-columns: repeat(4, 1fr);
-      width: 80%;
+      width: 90%;
       margin: 20px 0; }
       .main-estudios .estudios .estudios__contenedor .estudios__img {
-        width: 100px;
-        height: 100px; }
+        width: 80px;
+        height: 80px; }
   .main-trabajos .galeria {
     grid-template-columns: 1fr; }
   .main-contacto .form {
