@@ -231,7 +231,6 @@
     }
 }
 
-
 .main-sobre-mi {
     grid-area: main;
 
@@ -254,6 +253,7 @@
             }
             p {
                 font-size: $text;
+                margin: 20px 0;
             }
         }
 

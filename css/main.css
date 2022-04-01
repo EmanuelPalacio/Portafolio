@@ -1,20 +1,20 @@
 @charset "UTF-8";
 /*-----------------variables fuentes---------------*/
-@import url("http://fonts.cdnfonts.com/css/meticula");
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 /*-----------------variables fin fuentes---------------*/
 /*-----------------variables color---------------*/
 /*-----------------Fin variables color---------------*/
 /*-----------------variables Texto---------------*/
 /*-----------------Fin variables Texto---------------*/
 /*-----------------margin barra de nevagación---------------*/
-@import url("http://fonts.cdnfonts.com/css/meticula");
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 * {
   margin: 0;
   padding: 0;
   list-style: none;
   text-decoration: none;
   box-sizing: border-box;
-  font-family: "Meticula", sans-serif; }
+  font-family: "Rubik", sans-serif; }
 
 .Body {
   display: grid;
@@ -294,7 +294,8 @@
         font-size: 2rem;
         margin: 30px 0px; }
       .main-sobre-mi .main-sobre-mi__contenedor .main-sobre-mi__texto p, .main-sobre-mi .main-sobre-mi__contenedor .main-sobre-mi__cv p {
-        font-size: 1.2rem; }
+        font-size: 1.2rem;
+        margin: 20px 0; }
     .main-sobre-mi .main-sobre-mi__contenedor .main-sobre-mi__cv {
       display: flex;
       justify-content: center;
