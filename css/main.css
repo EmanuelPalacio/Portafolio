@@ -225,7 +225,7 @@
     width: 40%;
     text-align: center;
     color: #dcdcdc;
-    margin: 20px 10px; }
+    margin: 20px 0 20px 40px; }
     .main-estudios .estudios-text h1 {
       font-size: 2rem;
       margin: 50px 0; }
@@ -405,12 +405,13 @@
   .main-estudios {
     flex-direction: column; }
     .main-estudios .estudios-text {
-      width: 70%; }
+      width: 70%;
+      margin: 20px 0; }
     .main-estudios .estudios {
       grid-template-rows: 1fr;
       grid-template-columns: repeat(4, 1fr);
-      width: 90%;
-      margin: 20px 0; }
+      width: 100%;
+      margin: 0px; }
       .main-estudios .estudios .estudios__contenedor .estudios__img {
         width: 80px;
         height: 80px; }

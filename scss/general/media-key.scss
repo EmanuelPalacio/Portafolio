@@ -128,12 +128,13 @@ $breackpoints: (
         flex-direction: column;
         .estudios-text {
             width: 70%;
+            margin: 20px 0;
         }
         .estudios {
             grid-template-rows: 1fr;
             grid-template-columns: repeat(4,1fr);
-            width: 90%;
-            margin: 20px 0;
+            width: 100%;
+            margin: 0px;
             
             .estudios__contenedor {
                 .estudios__img {
