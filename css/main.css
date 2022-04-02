@@ -396,7 +396,7 @@ footer {
     width: 80%; } }
 
 @media screen and (max-width: 576px) {
-  .Body {
+  Body {
     grid-template-rows: 200px auto 100px; }
   .nav {
     position: static; }

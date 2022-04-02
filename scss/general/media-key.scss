@@ -108,7 +108,7 @@ $breackpoints: (
     }
 }
 @include desktop-first(sm) {
-    .Body {
+    Body {
         grid-template-rows: 200px auto 100px;
     }
     .nav {
