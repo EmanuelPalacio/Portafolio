@@ -159,6 +159,10 @@
         h1 {
             font-size: $Titulo;
             margin: 50px 0;
+
+            span {
+                display: block;
+            }
         }
         p {
             font-size: $text;
@@ -218,8 +222,9 @@
                     }
                 }
                 .image-size {
-                    width: 100%;
                     height: 100%;
+                    width: 100%;
+                    object-fit: cover;
                 }
 
                 &:hover .galeria__hover {
